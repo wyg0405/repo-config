@@ -10,11 +10,11 @@ eureka:
   instance:
     prefer-ip-address: true #将自己的ip地址注册到Eureka
     ip-address: 127.0.0.1
-    instance-id: user:8763 #指定实例id
+    instance-id: ${spring.application.name}:${server.port} #指定实例id
 
 spring:
   application:
-    name: user
+    name: UserService
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/cloud?useUnicode=true&characterEncoding=utf-8
