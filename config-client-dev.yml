@@ -1,3 +1,1 @@
-profiles: config-client-dev
-server:
-  port: 8801
+profiles: config-client-dev v2.0
